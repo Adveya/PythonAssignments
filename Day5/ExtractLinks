@@ -1,0 +1,11 @@
+
+import urllib.request as url
+
+
+lnk='http://ramakrishnavivekananda.info/'
+page=url.urlopen(lnk)
+
+with open('Filess.html','w') as fileObj:
+    fileObj.write(str(page.read()))
+
+
